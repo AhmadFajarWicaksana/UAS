@@ -41,6 +41,13 @@ class Rps extends CI_Controller
         $this->form_validation->set_rules('kriteria', 'Kriteria');
         $this->form_validation->set_rules('indikator_penilaian', 'Indikator_penilaian');
         $this->form_validation->set_rules('referensi', 'Referensi');
+        $this->form_validation->set_rules('uraian1', 'Uraian1');
+        $this->form_validation->set_rules('koefisen1', 'Koefisen1');
+        $this->form_validation->set_rules('satuan', 'Satuan');
+        $this->form_validation->set_rules('harga', 'Harga');
+        $this->form_validation->set_rules('ppn1', 'Ppn1');
+        $this->form_validation->set_rules('jumlah1', 'Jumlah1');
+       
 
         if ($this->form_validation->run() == false) {
             $this->load->view('create', $data);
@@ -67,13 +74,24 @@ class Rps extends CI_Controller
                 'bobot' => $this->input->post('bobot'),
                 'kriteria' => $this->input->post('kriteria'),
                 'indikator_penilaian' => $this->input->post('indikator_penilaian'),
+                'uraian1' => $this->input->post('uraian1'),
+                'koefisen1' => $this->input->post('koefisen1'),
+                'satuan' => $this->input->post('satuan'),
+                'harga' => $this->input->post('harga'),
+                'ppn1' => $this->input->post('ppn1'),
                 'referensi' => $this->input->post('referensi'),
+                'jumlah1' => $this->input->post('jumlah1'),
+                
+                
             ];
             $this->db->insert('tb_matkul', $data);
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Added successfully!</div>');
             redirect('rps/index');
         }
     }
+
+    
+
     function delete($id)
     {
         $this->Mlist->deletematkul($id);

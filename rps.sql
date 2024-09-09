@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 06, 2024 at 02:23 PM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 7.4.33
+-- Generation Time: Sep 04, 2024 at 03:13 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.1.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -41,13 +41,7 @@ CREATE TABLE `table_user` (
 --
 
 INSERT INTO `table_user` (`user_id`, `user_name`, `user_email`, `user_password`, `user_akses`, `user_status`) VALUES
-(1, 'Rieski Dhanu Saputra', 'admin@email.com', '58acb7acccce58ffa8b953b12b5a7702bd42dae441c1ad85057fa70b', 1, 1),
-(2, 'Rieski Dhanu Saputra', 'dosen@email.com', '57a44514f5c5149d6bb6346966d70a73bb1618a6899c97bf841d33a5', 2, 1),
-(3, 'Rieski Dhanu', 'mahasiswa@email.com', 'b2b0d7f03aeb6a8bd1922d857473737660745767a77b52edcfe2409a', 3, 1),
-(13, 'Rieski Dhanu', 'rieski@email.com', 'b028370bde360df15a9eb5c2ec11db17a0e4ab7f2f19680a1f3af262', 2, 1),
-(14, 'Rieski Dhanu', 'rieskidhanu@email.com', '99fb2f48c6af4761f904fc85f95eb56190e5d40b1f44ec3a9c1fa319', 2, 1),
-(15, 'Brian Al syarief', 'Blaa@email.com', 'a7470858e79c282bc2f6adfd831b132672dfd1224c1e78cbf5bcd057', 2, 1),
-(16, 'Brian Syarief', 'Syarief@email.com', 'a7470858e79c282bc2f6adfd831b132672dfd1224c1e78cbf5bcd057', 2, 1);
+(17, 'admin', 'admin@gmail.com', '58acb7acccce58ffa8b953b12b5a7702bd42dae441c1ad85057fa70b', 2, 1);
 
 -- --------------------------------------------------------
 
@@ -125,7 +119,9 @@ CREATE TABLE `tb_matkul` (
 --
 
 INSERT INTO `tb_matkul` (`id`, `program_studi`, `kode_matkul`, `nama_matkul`, `semester`, `sks`, `deskripsi`, `gambaran_umum`, `capaian_pembelajaran`, `prasyarat`, `kemampuan`, `indikator`, `bahan_kajian`, `metode_pembelajaran`, `waktu`, `metode_penilaian`, `bahan_ajar`, `aktivitas`, `waktu_tugas`, `bobot`, `kriteria`, `indikator_penilaian`, `referensi`) VALUES
-(16, 'D3 Teknik Informatika', 'DT001', 'Perancangan Web 2', 'Ganjil', '4', 'Perancangan web (web design) adalah istilah umum yang digunakan untuk mencakup bagaimana isi web konten ditampilkan, (biasanya berupa hypertext atau hypermedia) yang dikirimkan ke pengguna akhir melalui World Wide Web, dengan menggunakan sebuah browser web atau perangkat lunak berbasis web. Tujuan dari web design adalah untuk membuat website—sekumpulan konten online termasuk dokumen dan aplikasi yang berada pada server web / server. Sebuah website dapat berupa sekumpulan teks, gambar, suara dan konten lainnya, serta dapat bersifat interaktif ataupun statis.', 'Mata kuliah ini membahas teknologi web serta pemrograman web termasuk didalamnya yaitu HTML, CSS, Weblayout, JQuery dan Front End Framework ', 'Mahasiswa mampu merancang web mengunakan bahasa HTML', 'Tidak ada mata kuliah prasyarat untuk mengambil mata kuliah Pemrograman Web.', 'Mampu memahami definisi perancangan dan pemrograman web dengan elemen-elemen dasar HTML.', 'Mahasiswa mampu memahami bahasa pemrograman PHP dengan benar', 'Pengenalan HTML, implementasi Link pada halaman HTML, navigasi pada halaman HTML, serta penggunaan CSS', 'Praktikum, Latihan', '200', 'Laporan Praktikum', 'Elemen HTML, Link, Navigasi, dan Color', 'Praktikum', 'Minggu 1 - 2', '20%', 'Kelengkapan materi laporan dan sistematika penulisan laporan', 'Mahasiswa membuat dan mengumpulkan laporan praktikum dari hasil kegiatan praktikum 1 dan 2', 'Saputra, Rieski Dhanu, M.Kom. 2023. PHP Codeigniter : Sleman');
+(16, 'D3 Teknik Informatika', 'DT001', 'Perancangan Web 2', 'Ganjil', '4', 'Perancangan web (web design) adalah istilah umum yang digunakan untuk mencakup bagaimana isi web konten ditampilkan, (biasanya berupa hypertext atau hypermedia) yang dikirimkan ke pengguna akhir melalui World Wide Web, dengan menggunakan sebuah browser web atau perangkat lunak berbasis web. Tujuan dari web design adalah untuk membuat website—sekumpulan konten online termasuk dokumen dan aplikasi yang berada pada server web / server. Sebuah website dapat berupa sekumpulan teks, gambar, suara dan konten lainnya, serta dapat bersifat interaktif ataupun statis.', 'Mata kuliah ini membahas teknologi web serta pemrograman web termasuk didalamnya yaitu HTML, CSS, Weblayout, JQuery dan Front End Framework ', 'Mahasiswa mampu merancang web mengunakan bahasa HTML', 'Tidak ada mata kuliah prasyarat untuk mengambil mata kuliah Pemrograman Web.', 'Mampu memahami definisi perancangan dan pemrograman web dengan elemen-elemen dasar HTML.', 'Mahasiswa mampu memahami bahasa pemrograman PHP dengan benar', 'Pengenalan HTML, implementasi Link pada halaman HTML, navigasi pada halaman HTML, serta penggunaan CSS', 'Praktikum, Latihan', '200', 'Laporan Praktikum', 'Elemen HTML, Link, Navigasi, dan Color', 'Praktikum', 'Minggu 1 - 2', '20%', 'Kelengkapan materi laporan dan sistematika penulisan laporan', 'Mahasiswa membuat dan mengumpulkan laporan praktikum dari hasil kegiatan praktikum 1 dan 2', 'Saputra, Rieski Dhanu, M.Kom. 2023. PHP Codeigniter : Sleman'),
+(19, '7', 'aaaaoio', 'aku', '272', '3588', '1679', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
+(21, '5', 'BELANJA DAERAH', 'qwertyu', '12345678', '3588', '22.026.900', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -212,7 +208,7 @@ ALTER TABLE `tb_schedule`
 -- AUTO_INCREMENT for table `table_user`
 --
 ALTER TABLE `table_user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `tb_finalexam`
@@ -230,7 +226,7 @@ ALTER TABLE `tb_materi`
 -- AUTO_INCREMENT for table `tb_matkul`
 --
 ALTER TABLE `tb_matkul`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `tb_midterm`

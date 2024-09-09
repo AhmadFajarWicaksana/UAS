@@ -35,9 +35,9 @@
         <div class="row" style="min-height: 100vh;">
             <div class="col-3 m-0 p-0 bg-body-secondary">
                 <div class=" text-center">
-                    <img src="<?php echo base_url('assets/Dhanu.png'); ?>" alt="" width="130px" class="my-3 rounded-circle">
+                    <img src="<?php echo base_url('assets/kopi.jpg'); ?>" alt="" width="130px" class="my-3 rounded-circle">
                     <h6><?php echo $this->session->userdata('name'); ?></h6>
-                    <h6>22.01.4918</h6>
+                    
                     <!-- <a href="#" class="btn btn-warning text-light mb-3">LIHAT PROFIL</a>
                     <a href="#" class="btn btn-primary mb-3">FOTO PROFIL</a> -->
                 </div>
